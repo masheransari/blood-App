@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.asheransari.bloodapplication.signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fname_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:hint=" Your First Name"
+                    android:textColorHint="@android:color/holo_red_dark"
+                    android:textSize="18sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <EditText
+                    android:id="@+id/lname_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint=" Your Last Name"
+                    android:textColorHint="@android:color/holo_red_dark"
+                    android:textSize="18sp" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:inputType="textEmailAddress"
+            android:hint=" Your Email Address"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+    </android.support.design.widget.TextInputLayout>
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/blood_spinner_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:entries="@array/myBloods"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/password_signup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:inputType="textPassword"
+            android:hint=" Your Password"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+    </android.support.design.widget.TextInputLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/login_signup_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already Sign in"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_above="@+id/signup_btn_signup"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"/>
+    <Button
+        android:id="@+id/signup_btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        android:background="@color/btnColor"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>
+</LinearLayout>
