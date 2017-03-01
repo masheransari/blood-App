@@ -83,7 +83,7 @@ public class signup extends AppCompatActivity {
                                 Toast.makeText(signup.this, "Authentication Failed, Please Check ur Internet Connection...", Toast.LENGTH_SHORT).show();
                             } else {
                                 new_users users = new new_users(fname.getText().toString() + " " + lname.getText().toString(), email.getText().toString(), blood.getSelectedItem().toString(), psk.getText().toString());
-                                mDatabaseReference = mFirebaseDatabase.getReference().child("user").child(email.getText().toString());
+                                mDatabaseReference = mFirebaseDatabase.getReference().child("user");
                                 mDatabaseReference.push().setValue(users);
                                 Intent i =new Intent(signup.this,main_panel.class);
                                 i.putExtra("name", fname.getText().toString()+" "+lname.getText().toString());

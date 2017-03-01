@@ -15,15 +15,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class main_panel extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private String name, email, blood;
+    private FirebaseAuth auth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_panel);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        auth = FirebaseAuth.getInstance();
 
         Intent i = getIntent();
         name = i.getStringExtra("name");
@@ -48,11 +53,12 @@ public class main_panel extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         View hView = navigationView.getHeaderView(0);
+
         TextView nav_user = (TextView) hView.findViewById(R.id.title_name);
         nav_user.setText(name);
         TextView bGp = (TextView) hView.findViewById(R.id.title_bloodGroup);
         bGp.setText(blood);
-        TextView emailMain = (TextView)hView.findViewById(R.id.title_email);
+        TextView emailMain = (TextView) hView.findViewById(R.id.title_email);
         emailMain.setText(email);
     }
 
@@ -82,6 +88,10 @@ public class main_panel extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            auth.signOut();
+            Intent i = new Intent(main_panel.this, login.class);
+            startActivity(i);
+            finish();
             return true;
         }
 

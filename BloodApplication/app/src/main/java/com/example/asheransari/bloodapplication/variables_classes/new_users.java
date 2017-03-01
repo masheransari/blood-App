@@ -10,6 +10,7 @@ public class new_users {
     private String blood;
     private String password;
 
+    public new_users(){}
     public new_users(String name, String email, String blood, String password) {
         this.name = name;
         this.email = email;
