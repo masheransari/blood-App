@@ -9,9 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".login"/>
-        <activity android:name=".signup" />
-        <activity android:name=".forgetPassword" />
+        <activity android:name=".Authentication_Classes.login"/>
+        <activity android:name=".Authentication_Classes.signup" />
+        <activity android:name=".Authentication_Classes.forgetPassword" />
         <activity
             android:name=".main_panel"
             android:label="@string/title_activity_main_panel"

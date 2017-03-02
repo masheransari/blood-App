@@ -1,11 +1,9 @@
-package com.example.asheransari.bloodapplication;
+package com.example.asheransari.bloodapplication.Authentication_Classes;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,6 +11,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.asheransari.bloodapplication.R;
+import com.example.asheransari.bloodapplication.main_panel;
 import com.example.asheransari.bloodapplication.variables_classes.new_users;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -101,7 +101,7 @@ public class signup extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(signup.this, com.example.asheransari.bloodapplication.login.class);
+                Intent i = new Intent(signup.this, com.example.asheransari.bloodapplication.Authentication_Classes.login.class);
                 startActivity(i);
                 finish();
             }

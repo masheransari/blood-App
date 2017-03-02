@@ -45,6 +45,49 @@
         <item>Not Fullfilled</item>
         <item>Completed</item>
     </string-array>
+    <string-array name="state">
+        <item>Sindh</item>
+        <item>Punjab</item>
+        <item>Khayber Pakthoon Khawa</item>
+        <item>Balochistan</item>
+        <item>Kashmoor</item>
+    </string-array>
+    <string-array name="city">
+        <item>Karachi</item>
+        <item>Peshawar</item>
+        <item>Queeta</item>
+        <item>Lahore</item>
+        <item>Faisalabad</item>
+        <item>Hyderabad</item>
+        <item>Sukkar</item>
+        <item>Multan</item>
+    </string-array>
+    <string-array name="country">
+        <item>Pakistan</item>
+    </string-array>
+    <string-array name="relation1">
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item></item>
+        <item>Aunt</item>
+        <item>Uncle</item>
+        <item>Nephew</item>
+        <item>Niece</item>
+        <item>Friend</item>
+        <item>Neighbour</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="hospital1">
+        <item>Indus Hospital</item>
+        <item>Ziauddin Hospital</item>
+        <item>Agha Khan Hospital</item>
+        <item>Liaquat National Hospital</item>
+        <item>OMI</item>
+        <item>Jinnah Hospital</item>
+        <item>Holy Family Hospital</item>
+    </string-array>
     <string name="title_activity_main_panel">main_panel</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -52,4 +95,21 @@
 
     <string name="action_settings">Settings</string>
     <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="BloodGroup">Blood Group:</string>
+    <string name="numberOfUnitsRequired">No. of Units required</string>
+    <string name="unit_required">uni Reqquired</string>
+    <string name="urgency">Urgency :</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="hospital">Hospital</string>
+    <string name="realation">Your Relation With Patient</string>
+    <string name="contact_no">Contact Number :</string>
+    <string name="enter_contact">Enter Your Contact Number:</string>
+    <string name="additional_instruction">Additinal_info</string>
+    <string name="additional">Please share some additional Info wwith us...</string>
+    <string name="post">Post</string>
 </resources>

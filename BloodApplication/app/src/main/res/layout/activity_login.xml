@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.asheransari.bloodapplication.login">
+    tools:context="com.example.asheransari.bloodapplication.Authentication_Classes.login">
 
     <android.support.design.widget.CollapsingToolbarLayout
         android:layout_width="match_parent"
