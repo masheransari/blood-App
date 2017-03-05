@@ -108,21 +108,17 @@ public class main_panel extends AppCompatActivity
 
         FragmentManager fm = getSupportFragmentManager();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.home) {
 
-            fm.beginTransaction().replace(R.id.content_main_panel,new post_required()).commit();
+            fm.beginTransaction().replace(R.id.content_main_panel, new Home()).commit();
+        } else if (id == R.id.request) {
+            fm.beginTransaction().replace(R.id.content_main_panel, new post_required()).commit();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.post) {
 
-            fm.beginTransaction().replace(R.id.content_main_panel,new Home()).commit();
+        } else if (id == R.id.notification) {
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.setting) {
 
         }
 

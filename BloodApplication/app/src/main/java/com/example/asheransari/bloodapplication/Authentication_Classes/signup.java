@@ -21,6 +21,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import static com.example.asheransari.bloodapplication.Splash.name;
+
 public class signup extends AppCompatActivity {
 
     private EditText fname, lname, email, psk;
@@ -86,7 +88,9 @@ public class signup extends AppCompatActivity {
                                 mDatabaseReference = mFirebaseDatabase.getReference().child("user");
                                 mDatabaseReference.push().setValue(users);
                                 Intent i =new Intent(signup.this,main_panel.class);
+
                                 i.putExtra("name", fname.getText().toString()+" "+lname.getText().toString());
+                                name = fname.getText().toString()+" "+lname.getText().toString();
                                 i.putExtra("group", blood.getSelectedItem().toString());
                                 i.putExtra("email", email.getText().toString());
                                 startActivity(i);

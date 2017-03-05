@@ -27,6 +27,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
+import static com.example.asheransari.bloodapplication.Splash.name;
+
 public class login extends AppCompatActivity {
 
     private EditText uname, password;
@@ -116,6 +118,7 @@ public class login extends AppCompatActivity {
                         if (email.equals(arrayList.get(i).getEmail())) {
                             Toast.makeText(login.this, "in fetchUserDetail method and further in if condition", Toast.LENGTH_SHORT).show();
                             Intent a = new Intent(login.this, main_panel.class);
+                            name = arrayList.get(i).getName();
                             a.putExtra("name", arrayList.get(i).getName());
                             a.putExtra("group", arrayList.get(i).getBlood());
                             a.putExtra("email", arrayList.get(i).getEmail());

@@ -22,6 +22,7 @@ public class Splash extends AppCompatActivity {
     private FirebaseAuth auth;
     private DatabaseReference mDatabaseReference;
     private ChildEventListener mChildEventListener;
+    public static String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,7 +105,8 @@ public class Splash extends AppCompatActivity {
                         if (email.equals(arrayList.get(i).getEmail())) {
                             Toast.makeText(Splash.this, "in fetchUserDetail method and further in if condition", Toast.LENGTH_SHORT).show();
                             Intent a = new Intent(Splash.this, main_panel.class);
-                            a.putExtra("name", arrayList.get(i).getName());
+                            name = arrayList.get(i).getName();
+                            a.putExtra("name", name);
                             a.putExtra("group", arrayList.get(i).getBlood());
                             a.putExtra("email", arrayList.get(i).getEmail());
                             startActivity(a);

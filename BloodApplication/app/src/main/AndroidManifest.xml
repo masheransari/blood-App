@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".Authentication_Classes.login"/>
+        <activity android:name=".Authentication_Classes.login" />
         <activity android:name=".Authentication_Classes.signup" />
         <activity android:name=".Authentication_Classes.forgetPassword" />
         <activity
@@ -24,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Volunteer_Comment"></activity>
     </application>
 
 </manifest>

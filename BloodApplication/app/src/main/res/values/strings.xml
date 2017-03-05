@@ -39,7 +39,6 @@
         <item>Niece</item>
         <item>Friend</item>
         <item>Neighbour</item>
-        <item>None</item>
     </string-array>
     <string-array name="blood_requirment_status">
         <item>Not Fullfilled</item>
